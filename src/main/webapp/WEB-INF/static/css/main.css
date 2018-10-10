@@ -1,0 +1,17 @@
+html {
+    background-color: black; 
+}
+
+h1 {
+    padding-top: 20px;
+    font-family: 'Ultra', serif;
+    color: #fff;
+	text-transform: none;
+	font-size: 5vw;
+	margin: 0.15em 0 0 0;
+	text-shadow: 8px 4px 0px #ff33bb;
+}
+hr {
+    border: 20px dotted #fff;
+    border-style: none none dotted;  
+}
