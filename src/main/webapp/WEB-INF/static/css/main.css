@@ -15,3 +15,67 @@ hr {
     border: 20px dotted #fff;
     border-style: none none dotted;  
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Ultra', serif;
+}
+
+.dropdown-content a:hover {background-color: #cccccc;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.menu {
+    width: 35px;
+    height: 4px;
+    background-color: #ff33bb;
+    margin: 6px 0;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background:#ff33bb;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
