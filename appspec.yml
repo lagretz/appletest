@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /appletest/src/main/webapp/WEB-INF/static/
-    destination: /var/www/html/
+  - source: /
+    destination: /var/www/html/appletest
