@@ -12,9 +12,10 @@ h1 {
 	text-shadow: 8px 4px 0px #ff33bb;
 }
 hr {
-    border: 20px dotted #fff;
-    border-style: none none dotted;  
+    border: 2px solid #fff;
+    border-style: none none solid;  
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
