@@ -1,0 +1,21 @@
+p {
+    font-family: 'Patrick Hand', serif;
+    color: #fff;
+    font-size: 25px;
+    line-height: 32px;
+    padding-left: 15px;
+}
+
+li {
+    font-family: 'Patrick Hand', serif;
+    color: #fff;
+    font-size: 25px;
+    line-height: 32px;
+    padding-left: 5px;
+}
+
+.information {
+    margin-right: 200px;
+    margin-left: 200px;
+    border-left: 4px dotted #ff33bb; 
+}

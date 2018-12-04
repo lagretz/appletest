@@ -20,8 +20,10 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public void saveOrUpdate(User user) {
-		String SQL = "insert into User (id, name) values (?, ?)";
-		jdbcTemplate.update(SQL, 1, user.getName());
+		System.out.println("In User ");
+		int id = 10;
+		String SQL = "insert into user (id, Name) values (?, ?)";
+		jdbcTemplate.update(SQL, id, user.getName());
 		return;
 	}
 

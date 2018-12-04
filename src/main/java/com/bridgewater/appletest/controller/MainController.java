@@ -15,11 +15,6 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String index() {
-		User myUser = new User("laura", "email", "address", "telephone");
-		userDAO.saveOrUpdate(myUser);
-		System.out.println(myUser);
-
-		System.out.println("HELLLO CONTROLLLER");
 		return "static/index";
 	}
 }

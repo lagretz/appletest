@@ -11,6 +11,7 @@ public class User {
 	@GeneratedValue
 	private int id;
 	private String name;
+	private String lastName;
 	private String email;
 	private String address;
 	private String telephone;
@@ -18,11 +19,14 @@ public class User {
 	public User() {
 	}
 
-	public User(String name, String email, String address, String telephone) {
+	public User(String name, String lastName, String email, String password) {
 		this.setName(name);
+		this.setName(lastName);
 		this.setEmail(email);
-		this.setAddress(address);
-		this.setTelephone(telephone);
+		this.setAddress(password);
+	}
+	public User(String name) {
+		this.setName(name);
 	}
 
 	public int getId() {
