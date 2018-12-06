@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shuffle Shuffle</title>
+		<link rel="stylesheet" type="text/css" href="static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/decolines.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]--><script>document.documentElement.className = 'js';</script>
+	</head>
+    
+    <!--source:https://tympanus.net/codrops/2016/10/12/animated-decorative-lines/-->
+	<body class="demo-6">
+		<main>
+            <!--source: https://codepen.io/MaryG/pen/wJMMdw-->
+            <div class="muzieknootjes">
+              <div class="noot-1">
+              &#9835; &#9833;
+            </div>
+            <div class="noot-2">
+              &#9833;
+            </div>
+            <div class="noot-3">
+              &#9839; &#9834;
+            </div>
+            <div class="noot-4">
+              &#9834;
+            </div>
+            </div>
+            
+			<header class="codrops-header">
+				<h1 class="codrops-header__title">Shuffle Shuffle</h1>
+                <div class="noot-1">
+              &#9835; &#9833;
+            </div>
+            <div class="noot-2">
+              &#9833;
+            </div>
+            <div class="noot-3">
+              &#9839; &#9834;
+            </div>
+            <div class="noot-4">
+              &#9834;
+            </div>
+				<nav class="codrops-demos">
+					<a href="static/playlist.html">My Playlists</a>
+					<a href="static/toptracks.html">Top Tracks</a>
+					<a href="static/account.html">My Account</a>
+					<a href="static/howto.html"> How To </a>
+					<a href="static/about.html">About</a>
+					<a href="static/contact.html">Contact Us</a>
+				</nav>
+                
+                     <div class="playpause" style="padding-top: 50px;">
+                    <input type="checkbox" value="None" id="playpause" name="check" />
+                    <label for="playpause" tabindex=1></label>
+                 </div>
+                     <p>Press Me to Play/Pause Music</p>
+                
+			</header>
+              <div class="noot-1">
+              &#9835; &#9833;
+            </div>
+            <div class="noot-2">
+              &#9833;
+            </div>
+            <div class="noot-3">
+              &#9839; &#9834;
+            </div>
+            <div class="noot-4">
+              &#9834;
+            </div>
+            
+		</main>
+		<script src="/static/js/anime.min.js"></script>
+		<script src="/static/js/main.js"></script>
+		<script>
+		(function() {
+			var lineMaker = new LineMaker({
+					parent: { element: document.body, position: 'append' },
+					position: 'fixed',
+					lines: [
+						{top: 0, left: '0', width: '20vw', height: '100vh', color: '#ff33bb', hidden: false, animation: { duration: 1000, easing: 'easeInOutCirc', delay: 0, direction: 'TopBottom' }},
+						{top: 0, left: '20vw', width: '20vw', height: '100vh', color: '#fff', hidden: false, animation: { duration: 1000, easing: 'easeInOutCirc', delay: 150, direction: 'BottomTop' }},
+						{top: 0, left: '40vw', width: '20vw', height: '100vh', color: '#ff33bb', hidden: false, animation: { duration: 1000, easing: 'easeInOutCirc', delay: 300, direction: 'TopBottom' }},
+						{top: 0, left: '60vw', width: '20vw', height: '100vh', color: '#fff', hidden: false, animation: { duration: 1000, easing: 'easeInOutCirc', delay: 450, direction: 'BottomTop' }},
+						{top: 0, left: '80vw', width: '20vw', height: '100vh', color: '#ff33bb', hidden: false, animation: { duration: 1000, easing: 'easeInOutCirc', delay: 600, direction: 'TopBottom' }}
+					]
+			});
+			
+			setTimeout(function() {
+				lineMaker.animateLinesOut();
+			}, 500);
+		})();
+		</script>
+	</body>
+</html>
